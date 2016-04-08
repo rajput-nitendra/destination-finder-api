@@ -11,4 +11,4 @@ to list all tasks:
 
 To view the assignment (after starting the application) go to:
 
-[http://localhost:9000/travel/index.html](http://localhost:9000/travel/index.html){:target="_blank"}
+[http://localhost:9000/travel/index.html](http://localhost:9000/travel/index.html)
