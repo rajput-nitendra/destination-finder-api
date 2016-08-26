@@ -21,14 +21,17 @@
             The time limit for <strong>regular</strong> developers is 3 hours.<br>
             The time limit for <strong>fullstack</strong> developers is 4 hours because of an extra assignment
             (see below).
+            Please do not take into account the time you need for the setup (see below).
         </p><h2>Setup</h2>
         <p>
-            Start with cloning the repository containing the service mock found <a
+            Start with cloning the repository containing the service mock project found <a
                 href="https://bitbucket.org/afklmdevnet/simple-travel-api-mock" target="_blank">here</a>.
-            All the details required to start the mock and how to use it can be found in the included readme.
+            All the details required to start the service mock project and how to use it can be found in the included readme.
+            The service mock project should NOT be altered and should only be used from your project.
+            You can use the current project as starting point/template for your project.
         </p>
         <p>
-            The service mock provides a couple of resources needed to complete the tasks, try them first
+            The service mock project provides a couple of resources needed to complete the tasks, try them first
             in a client (i.e. <a href="https://www.getpostman.com/" target="_blank">postman</a>) 
             to get familiar with them.
             Please do note that the resources are protected and require application level
@@ -52,11 +55,11 @@
         </p>
         <h3>Create a backend supporting the user interface</h3>
         <p>
-            The user interface requires a dedicated backend that support it, build this in the
+            The user interface requires a dedicated backend that supports it, build this in the
             provided template using spring-boot.
         </p>
         <ul>
-            <li>Proxy requests from the ui to the mock.</li>
+            <li>Consume the mocked services from the service mock project.</li>
             <li>The authentication is on application level, so make sure the user interface is not
                 bothered with authentication.
             </li>
