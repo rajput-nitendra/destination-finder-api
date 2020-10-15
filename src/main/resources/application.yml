@@ -1,0 +1,32 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /travel
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - info
+          - prometheus
+          - metrics
+
+
+auth-configs:
+  client-id: travel-api-client
+  client-secret: psw
+  grant-type: client_credentials
+
+application-endpoints:
+  access-token-uri: http://localhost:8080/oauth/token
+  airports-uri: http://localhost:8080/airports
+  calculate-fare-uri: http://localhost:8080/fares
